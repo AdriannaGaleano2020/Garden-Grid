@@ -1,0 +1,44 @@
+/* levels.css */
+/* Styles for different garden levels */
+
+.level-1 {
+    padding: 20rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    background:  #008000;
+    box-shadow: 0 2px 8px rgba(194, 10, 10, 0.08);
+    transition: box-shadow 0.2s;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+}
+
+.level:hover {
+    box-shadow: 0 4px 16px rgba(60, 80, 60, 0.16);
+}
+
+.level-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3baa;
+    margin-bottom: 0.5rem;
+}
+
+.level-description {
+    font-size: 1rem;
+    color: #4e6e50;
+    margin-bottom: 1rem;
+}
+
+.level-completed {
+    border: 2px solid #66bb6a;
+    background: #f1f8e9;
+    opacity: 0.7;
+}
+
+.level-locked {
+    border: 2px dashed #bdbdbd;
+    background: #f5f5f5;
+    color: #bdbdbd;
+    pointer-events: none;
+    opacity: 0.5;
+}

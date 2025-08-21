@@ -1,0 +1,145 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+#level-1 {
+  background-color: #0ceb1f;
+  height: 10%;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-areas: "a a"
+}
+
+#level-2 {
+  background-color: #0c7ef1;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 50px, 50px, 50px;
+  grid-template-rows: 50px, 50px, 50px;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-areas: "c c";
+
+  .peas {
+    grid-area: c;
+  }
+}
+
+#level-3 {
+  background-color: #f10c0c;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 50px, 50px;
+  grid-template-rows: 50px, 50px;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-areas: 
+  "peas onions onions"
+    "tomatoes tomatoes lettuce"
+    "carrot carrot carrot";
+
+  .carrots {
+    grid-area: carrot;
+  }
+  .peas {
+    grid-area: peas;
+  }
+  .onions {
+    grid-area: onions;
+  }
+  .tomatoes {
+    grid-area: tomatoes;
+  }
+  .lettuce {
+    grid-area: lettuce;
+  }
+}
+
+#level-4 {
+  background-color: #650eb1;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-areas: 
+  "peas peas onions carrot"
+  "tomatoes lettuce onions carrot";
+
+.carrots {
+    grid-area: carrot;
+  }
+  .peas {
+    grid-area: peas;
+  }
+  .onions {
+    grid-area: onions;
+  }
+  .tomatoes {
+    grid-area: tomatoes;
+  }
+  .lettuce {
+    grid-area: lettuce;
+  }
+}
+
+#level-5 {
+  background-color: #6ce889;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-areas: 
+  "carrot . onions . lettuce"
+  "carrot . onions peas peas"
+  "carrot tomatoes tomatoes tomatoes .";
+
+  .carrots {
+    grid-area: carrot;
+  }
+  .peas {
+    grid-area: peas;
+  }
+  .onions {
+    grid-area: onions;
+  }
+  .tomatoes {
+    grid-area: tomatoes;
+  }
+  .lettuce {
+    grid-area: lettuce;
+  }
+}
+
+#level-6 {
+  background-color: #0a011f;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+
+}
+
+body {
+  background-color: rgb(232, 224, 14);
+}
+
+.garden {
+  border: 4px solid rgb(0, 128, 13);
+  padding: 5px;
+  gap: 2px;
+}
+
+.garden p {
+  margin: 0;
+  border-radius: 5px;
+  padding: 0.25rem;
+  background-color: rgb(245, 179, 243);
+  text-align: center;
+}
